@@ -1,0 +1,31 @@
+{
+    "name": "alikhoursand/larager",
+    "description": "A Laravel logger package which listens to your logs and exceptions and shows them in a user-friendly way",
+    "keywords": ["laravel", "logger", "logging", "exceptions", "log viewer", "monitoring"],
+    "license": "MIT",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Alikhoursand\\Larager\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "alikhoursand",
+            "email": "ali.khoursand@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alikhoursand\\Larager\\LaragerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0"
+    }
+}
