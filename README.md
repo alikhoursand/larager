@@ -65,7 +65,7 @@ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.non_existing_tab
 
 You'll see:
 
-![Larager Example](https://path.png)
+![Larager Example](https://github.com/user-attachments/assets/17818694-2f2c-4172-867c-c50cf558a7c8)
 
 
 
