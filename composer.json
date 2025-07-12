@@ -1,5 +1,5 @@
 {
-    "name": "alikhoursand/larager",
+    "name": "larager/larager",
     "description": "A Laravel logger package which listens to your logs and exceptions and shows them in a user-friendly way",
     "keywords": ["laravel", "logger", "logging", "exceptions", "log viewer", "monitoring"],
     "license": "MIT",
