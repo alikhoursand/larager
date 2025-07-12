@@ -17,14 +17,14 @@ A Laravel logger package that listens to your logs and exceptions and displays t
 ## 📦 Installation
 
 ```bash
-composer require alikhoursand/larager
+composer require larager/larager
 ```
 
 If you're not using Laravel's package auto-discovery, manually register the service provider in `config/app.php`:
 
 ```php
 'providers' => [
-    Alikhoursand\Larager\LaragerServiceProvider::class,
+    Larager\Larager\LaragerServiceProvider::class,
 ],
 ```
 

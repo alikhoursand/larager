@@ -1,6 +1,6 @@
 <?php
 
-namespace Alikhoursand\Larager\Http\Controllers;
+namespace Larager\Larager\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 
@@ -58,6 +58,4 @@ class DebugController extends Controller
 
         return $e;
     }
-
-
 }

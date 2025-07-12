@@ -1,13 +1,13 @@
 <?php
 
-namespace Alikhoursand\Larager;
+namespace Larager\Larager;
 
 use Illuminate\Log\Events\MessageLogged;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 use function PHPUnit\Framework\isEmpty;
-use Alikhoursand\Larager\Http\Controllers\DebugController;
+use Larager\Larager\Http\Controllers\DebugController;
 use Illuminate\Support\Facades\Route;
 
 class LaragerServiceProvider extends ServiceProvider

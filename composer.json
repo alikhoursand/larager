@@ -6,7 +6,7 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Alikhoursand\\Larager\\": "src/"
+            "Larager\\Larager\\": "src/"
         }
     },
     "authors": [
@@ -18,7 +18,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Alikhoursand\\Larager\\LaragerServiceProvider"
+                "Larager\\Larager\\LaragerServiceProvider"
             ]
         }
     },
