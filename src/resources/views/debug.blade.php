@@ -7,9 +7,9 @@
 </head>
 <body class="bg-zinc-800 text-zinc-100">
 
-    <h1 class="text-4xl mt-4 text-center font-bold">Larager Debug Logs</h1>
+    <h1 class="text-4xl my-12 text-center font-bold">Larager Debug Logs</h1>
 
-    <div class="flex flex-col gap-4 max-w-screen-lg mx-auto my-12">
+    <div class="flex flex-col gap-4 max-w-screen-lg mx-auto pb-8 px-2">
 
         @if(count($logs))
         @foreach ($logs as $log)
@@ -25,7 +25,7 @@
         default => 'white',
         };
         @endphp
-        @component('components.logCard',['log'=>$log,'color'=>$color])
+        @component('larager::components.logCard',['log'=>$log,'color'=>$color])
         @endcomponent
 
 
