@@ -27,6 +27,6 @@
          </div>
          <span class="font-medium text-sm text-white ">{{$log->timestamp}}</span>
      </div>
-     <div class="text-sm mt-2 text-zinc-100 font-medium text-{{$color}}-200 opacity-90">{{ e($log->message) }}</div>
+     <div class="text-sm mt-2 text-zinc-100 font-medium text-{{$color}}-200 opacity-90">{!! e($log->message) !!}</div>
 
  </div>
