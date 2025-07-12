@@ -7,12 +7,15 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 use function PHPUnit\Framework\isEmpty;
+use Alikhoursand\Larager\Http\Controllers\DebugController;
+use Illuminate\Support\Facades\Route;
 
 class LaragerServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
+        Route::middleware(config('larager.middleware', []))->get('/debug', [DebugController::class, 'index']);
+
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'larager');
 
         $this->publishes([
@@ -25,7 +28,6 @@ class LaragerServiceProvider extends ServiceProvider
 
         $this->registerLogListener();
         config(['logging.default' => 'null']);
-
     }
 
     public function register()
@@ -70,5 +72,4 @@ class LaragerServiceProvider extends ServiceProvider
             file_put_contents($logFile, json_encode($log) . PHP_EOL, FILE_APPEND);
         });
     }
-
 }
